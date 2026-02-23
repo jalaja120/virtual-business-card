@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jalaja R - Virtual Business Card</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Blobs -->
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<div class="card">
+
+    <div class="toggle-container">
+        <button id="themeToggle">🌙</button>
+    </div>
+
+    <img src="profile.jpg" alt="Profile" class="profile-img">
+
+    <h1>Jalaja R</h1>
+    <h3>Computer Science Student</h3>
+
+    <p class="bio">
+        Passionate about AI, Web Development & Problem Solving.
+        Building scalable and creative digital solutions.
+    </p>
+
+    <div class="contact">
+        <p><i class="fas fa-envelope"></i> jaanujalaja5409@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91 9663931698</p>
+    </div>
+
+    <div class="social">
+
+        <a href="https://www.linkedin.com/in/jalaja-r-7827392b9" target="_blank" class="tooltip" data-text="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/jalaja120" target="_blank" class="tooltip" data-text="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://leetcode.com/u/jalaja_549/" target="_blank" class="tooltip" data-text="LeetCode">
+            <svg viewBox="0 0 50 50">
+                <path d="M34.6 10.6l-3.5 3.5 6.3 6.3H12v5h25.4l-6.3 6.3 3.5 3.5L47 25z"/>
+                <path d="M17.4 39.4l3.5-3.5-6.3-6.3H40v-5H14.6l6.3-6.3-3.5-3.5L5 25z"/>
+            </svg>
+        </a>
+
+    </div>
+
+    <div class="qr">
+        <p>Scan My Card</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=YOUR_DEPLOYED_LINK_HERE" alt="QR Code">
+    </div>
+
+    <button onclick="showMessage()">Connect With Me</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
